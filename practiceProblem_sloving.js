@@ -69,3 +69,28 @@ if(jaliya >= 70 && jaliya <= 80){
 else{
     console.log("All is auto pass");
 }
+
+// Ques: given n, check whether n is prime or Composition
+// n=21 composite
+// n=17 prime
+// n=1 1 is neither prime nor composite
+// n=25 composite
+// n=2 prime
+var n = 1;
+var count = 0;
+for (var i=2; i<n; i++){
+    if(n%i==0){
+        count++;
+    }
+}
+if(count==0){
+    if(n==1){
+        console.log('1 is neither prime or composite');
+    }
+    else{
+        console.log('prime');
+    }
+}
+else{
+    console.log('Composite');
+}
