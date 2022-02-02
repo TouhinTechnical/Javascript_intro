@@ -1,3 +1,5 @@
+// Problem Sloving #1
+
 // Problem sloveing : 3ta number take boru number ta kuje bahir korar program
 var firstNumber = 30;
 var secondNumber = 20;
@@ -20,6 +22,7 @@ else{
     }
 }
 
+// Problem Sloving #2
 // Exam Result
 var aliya = 95;
 var daliya = 66;
@@ -70,6 +73,8 @@ else{
     console.log("All is auto pass");
 }
 
+// Problem Sloving #3
+
 // Ques: given n, check whether n is prime or Composition
 // n=21 composite
 // n=17 prime
@@ -93,4 +98,19 @@ if(count==0){
 }
 else{
     console.log('Composite');
+}
+
+// Problem Sloving #4
+
+// Q: Array element kha loop maddome dakano
+var numbers = [45, 86, 34, 87, 12, 98, 82];
+for(var i = 0; i < numbers.length; i++){
+    var element = numbers[i];
+    console.log(element);
+}
+// Another 18.5Module
+var practiceArray = ["রাত ৮ টা বাজে মডিউল আনলক করো", "ফটাফট ভিডিও দেখে দেখে প্রাকটিস করো", "ভিডিও দেখতে দেখতে নোটস নাও", "মডিউল শেষ হলে পুরা মডিউল নিজে নিজে প্রাকটিস করো"];
+for (var i = 0; i < practiceArray.length; i++){
+    var element = practiceArray[i];
+    console.log(element);
 }
