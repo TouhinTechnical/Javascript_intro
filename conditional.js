@@ -83,3 +83,107 @@ if(danishPrice < myBudget){
         console.log('danish date experied');
     }
 }
+// problem sloveing
+var a = 4;
+var b = 5;
+var c = 4;
+var d = 6;
+// a jodi b take boru hoi
+if(a > b){
+    console.log("a biggest than b");
+}
+else{
+    console.log("b biggest than a");
+}
+// a jodi b take chuto hoi
+if(b < c){
+    console.log("b smallest than c");
+}
+else{
+    console.log("c smallest than b");
+}
+// a jodi c take boru ba soman hoi
+if(a >= c){
+    console.log("yes you can allowed");
+}
+else{
+    console.log("no, not allowed");
+}
+// b jodi d take chuto ba soman hoi
+if(b <= d ){
+    console.log("b is allowed");
+}
+else{
+    console.log("d is allowed");
+}
+// a jodi b 2ta soman
+if(a == c){
+    console.log("you can ran");
+}
+else{
+    console.log("not ran");
+}
+// a jodi b 2ta soman nah
+if(a != b){
+    console.log("yeah! i can work");
+}
+else{
+    console.log("no! bad luck");
+}
+
+// 2ta condition true hoi taile && use krte hoi
+var myAge = 21;
+// eikane 2ta condition ace 2ta true hoile program run korbe
+if(myAge > 20 && myAge < 60){
+    console.log("you are a young person")
+}
+else{
+    console.log("you are a child");
+}
+// 2ta condition modde jakono akta true hoile program run korbe
+if(myAge > 20 || myAge > 60){
+    console.log("yes you are adult")
+}
+else{
+    console.log("no you are child");
+}
+
+//if..else if
+var whatDAY = "sunday";
+if(whatDAY == "friday"){
+    console.log("it is closed today");
+}else if(whatDAY == "thursday"){
+    console.log("it is partially closed");
+}else if(whatDAY == "saturday"){
+    console.log("Some office are closed today");
+}else if(whatDAY == "sunday"){
+    console.log("yes ajk off day gf k niye gorte jhamu");
+}else{
+    console.log("it is normal working day today");
+}
+
+
+// Ques: given n, check whether n is prime or Composition
+// n=21 composite
+// n=17 prime
+// n=1 1 is neither prime nor composite
+// n=25 composite
+// n=2 prime
+/* var n = 1;
+var count = 0;
+for (var i=2; i<n; i++){
+    if(n%i==0){
+        count++;
+    }
+}
+if(count==0){
+    if(n==1){
+        console.log('1 is neither prime or composite');
+    }
+    else{
+        console.log('prime');
+    }
+}
+else{
+    console.log('Composite');
+} */
