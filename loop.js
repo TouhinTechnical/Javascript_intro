@@ -33,6 +33,10 @@ for (var evenNumber = 2; evenNumber <= 50; evenNumber += 2){
     console.log("even Number" + ' ' + evenNumber);
 }
 
+for (var daliyWork = 0; daliyWork < 10; daliyWork++){
+    console.log("daliyWork" + ' ' + daliyWork);
+}
+
 for (var i = 2; i <= 10; i+= 2){
     console.log("even Number" + ' ' + i);
 }
