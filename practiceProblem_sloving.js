@@ -114,3 +114,26 @@ for (var i = 0; i < 10; i++){
     var element = practiceArray[i];
     console.log(element);
 }
+
+// problem sloving #5
+// Ques: একটা ফাংশন লিখবা যেটা ১৩ এর নামতা (multiplication table) আউটপুট হিসেবে দেখাবে।
+function multiplicationTable13(number){
+    for(var i = 1; i <= 10; i++){
+        var result = i * number;
+        // console.log(result);
+        console.log(`${number} x ${i} = ${result}`); // eivaba print hoy system consolelog 1x2=2;
+
+    }
+}
+multiplicationTable13(13);
+
+// Problem sloving #6
+// Ques: একটা ফাংশন লিখবা যেটাকে তুমি কোন সংখ্যাকে ইনপুট হিসেবে দিলে সে সেই সংখ্যার square করে সেই square কে রিটার্ন করবে।
+function squareTable(number){
+    var squareCount = number * number;
+    // console.log(squareCount);
+    console.log(`${number} x ${number} = ${squareCount}`);
+    return squareCount;
+}
+var result = squareTable(20); //user joto number nibe ta square korbe
+console.log(result);

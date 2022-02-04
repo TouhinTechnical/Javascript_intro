@@ -92,4 +92,3 @@ const firstReminder = 12;
 const seconReminder = 2;
 const totalReminder = getReminder(firstReminder, seconReminder);
 console.log('Reminder Number value:', totalReminder);
-
