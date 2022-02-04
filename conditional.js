@@ -1,9 +1,9 @@
 var isFoodReady = true;
 var isFoodNotReady = false;
 // jodi khaber ready hoi taile ami khamu
-if(isFoodNotReady == true){
-    console.log('mama!! i will eat now.');
-    // console.log('khaber ready nah');
+if(isFoodNotReady == false){
+    // console.log('mama!! i will eat now.');
+    console.log('khaber ready nah');
 }
 
 var iPhonePrice = '70k';

@@ -40,3 +40,17 @@ for (var daliyWork = 0; daliyWork < 10; daliyWork++){
 for (var i = 2; i <= 10; i+= 2){
     console.log("even Number" + ' ' + i);
 }
+// Break Statement(loop modde kono element k stop korte caile loop ta soho loop stop korte caile break statement use korte hoi)
+for (var i = 2; i <= 20; i += 2){
+    if(i == 12){
+        break;
+    }
+    console.log("even Number" + ' ' + i);
+}
+// continue statement
+for (var i = 1; i <= 40; i += 2){
+    if(i == 15){
+        continue;
+    }
+    console.log("odd Number" + ' ' + i);
+}
