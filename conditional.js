@@ -161,3 +161,53 @@ if(whatDAY == "friday"){
 }else{
     console.log("it is normal working day today");
 }
+
+//Switch case
+var color = 'yellow';
+switch(color){
+    case 'blue' :
+        console.log('color is blue');
+        break;
+    case 'red' :
+        console.log('color is red');
+        break;
+    case 'white' :
+        console.log('color is white');
+        break;
+    case 'green' :
+        console.log('color is green');
+        break;
+    case 'yellow' :
+        console.log('color is yellow');
+        break;
+    default:
+        console.log('color is black');
+
+};
+//weekday ar jonno switch case
+var weekday = 'Sunday';
+switch(weekday){
+    case 'Saturday':
+        console.log('Saturday! Today is closed');
+        break;
+    case 'Sunday':
+        console.log('Sunday! It is a normal day');
+        break;
+    case 'Monday':
+        console.log('Monday! It is a normal day');
+        break;
+    case 'Tuesday':
+        console.log('Tuesday! It is a normal day');
+        break;
+    case 'Wednesday':
+        console.log('Wednesday! It is a normal day');
+        break;
+    case 'Thursday':
+        console.log('Thursday! It is a normal day');
+        break;
+    case 'Friday':
+        console.log('Friday! It is a normal day');
+        break;
+    default:
+        console.log('Not a Day');
+}
