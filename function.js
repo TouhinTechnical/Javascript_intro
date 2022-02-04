@@ -82,3 +82,14 @@ function divisionTwoNumbers(count1, count2){
 // function call
 var totalAmount = divisionTwoNumbers(secondNumber, firstNumber);
 console.log('Division Number value:', totalAmount);
+
+//Reminder%
+function getReminder(number1, number2){
+    const totalReminder = number1 % number2;
+    return totalReminder;
+}
+const firstReminder = 12;
+const seconReminder = 2;
+const totalReminder = getReminder(firstReminder, seconReminder);
+console.log('Reminder Number value:', totalReminder);
+
