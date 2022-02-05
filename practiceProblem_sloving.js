@@ -147,3 +147,47 @@ function sum(n){
     }
 }
 console.log(sum(1000)); // recursion use korar jnno output onk value nile kintu browzer ta error dakabe krn tara value ta count korte pare nah
+
+// Problem sloving #7
+
+// Ques: তোমার বয়স কি odd নাকি even সংখ্যা সেটা চেক কর একটা ফাংশন দিয়ে। সেই ফাংশনকে কোন সংখ্যা প্যারামিটার হিসেবে দিলে, সেই সংখ্যা Even হলে ফাংশন true রিটার্ন করবে আর Odd হলে false রিটার্ন করবে।
+
+function yearsOddOrEven(number){
+    if(number % 2 == 0){
+        var evenNumber = true;
+        return evenNumber; // jor number
+    }
+    else{
+        var oddNumber = false;
+        return oddNumber; // bajor number
+    }
+}
+var age = yearsOddOrEven(23);
+console.log('My Age is :', age);
+
+// Problem sloving #8
+
+// Ques:  leapYear() নামে ফাংশন লিখো এবং নেক্সট ইয়ার অর্থাৎ ২০২৩ কি leap year নাকি সেটা চেক করো। Leap year হলে ফাংশন true রিটার্ন করবে আর leap year না হলে false রিটার্ন করবে।
+
+function isLeapYear(year){
+    if((year % 4 === 0) && (year % 100 !== 0) || (year % 400 == 0)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+const myYear = 2023;
+const myYearLeap = isLeapYear(myYear);
+console.log('This year is leap year or not:', myYearLeap);
+
+// Problem sloving #9
+
+// Ques: এমন একটা ফ্যাংশনা লিখো যেটাকে তুমি ঘন্টাকে ইনপুট প্যারামিটার হিসেবে দিবে। আর সে সেই ঘন্টাকে মিনিটে কনভার্ট করে মিনিট রিটার্ন করবে।
+
+function hourToMin(hours){
+    let mins = hours * 60;
+    return mins;
+}
+var convertResult = hourToMin(48);
+console.log('Hour to Minute is convert: ', convertResult);
