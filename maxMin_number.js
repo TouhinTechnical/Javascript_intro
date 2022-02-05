@@ -20,7 +20,8 @@ function findSmallestNumber(firstNumber,secondNumber,thirdNumber){
     if(firstNumber < secondNumber && firstNumber < thirdNumber){
         var firstNumberValue = 'First Number is smallest';
         return firstNumberValue;
-    }else if(secondNumber < firstNumber && secondNumber < thirdNumber){
+    }
+    else if(secondNumber < firstNumber && secondNumber < thirdNumber){
         var secondNumberValue = 'Second Number is smallest';
         return secondNumberValue;
     }
