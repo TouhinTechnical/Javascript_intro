@@ -130,10 +130,20 @@ multiplicationTable13(13);
 // Problem sloving #6
 // Ques: একটা ফাংশন লিখবা যেটাকে তুমি কোন সংখ্যাকে ইনপুট হিসেবে দিলে সে সেই সংখ্যার square করে সেই square কে রিটার্ন করবে।
 function squareTable(number){
-    var squareCount = number * number;
+    var squareCount = number * number; // recursion
     // console.log(squareCount);
     console.log(`${number} x ${number} = ${squareCount}`);
     return squareCount;
 }
 var result = squareTable(20); //user joto number nibe ta square korbe
 console.log(result);
+
+// f(n-1) + n =f(n); ba (n(n+1))/2;
+function sum(n){
+    if(n === 0){
+        return 0;
+    }else{
+        return sum(n-1) + n;
+    }
+}
+console.log(sum(1000)); // recursion use korar jnno output onk value nile kintu browzer ta error dakabe krn tara value ta count korte pare nah
