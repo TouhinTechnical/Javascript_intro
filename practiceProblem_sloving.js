@@ -191,3 +191,22 @@ function hourToMin(hours){
 }
 var convertResult = hourToMin(48);
 console.log('Hour to Minute is convert: ', convertResult);
+
+// Ques: একটা লুপ লিখতে হবে যেটা ১ থেকে ১০০ পর্যন্ত যত সংখ্যা আছে সেটা দেখাবে
+for(let i = 1; i <= 100; i++){
+    console.log('Serial Number is :', i);
+}
+// Ques: ৫০ থেকে ৮০ এর মধ্যে যতো বিজোড় সংখ্যা আছে সেগুলাকে দেখাবে।
+for(let i = 51; i <= 80; i += 2){
+    console.log('Odd Number show: ', i);
+};
+// Ques: তিনটা সংখ্যা এর যোগ করতে পারবে এমন একটা ফাংশন লিখো 
+let firstValue = 45;
+let secondValue = 87;
+let thirdValue = 96;
+function threeNumberAddition(num1,num2,num3){
+   let threeAdditionResult = num1 + num2 + num3;
+   return threeAdditionResult; 
+}
+let additionValue = threeNumberAddition(firstValue,secondValue,thirdValue);
+console.log('Three Number Addition is: ', additionValue);
