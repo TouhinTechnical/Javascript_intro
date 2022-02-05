@@ -182,9 +182,7 @@ const myYearLeap = isLeapYear(myYear);
 console.log('This year is leap year or not:', myYearLeap);
 
 // Problem sloving #9
-
 // Ques: এমন একটা ফ্যাংশনা লিখো যেটাকে তুমি ঘন্টাকে ইনপুট প্যারামিটার হিসেবে দিবে। আর সে সেই ঘন্টাকে মিনিটে কনভার্ট করে মিনিট রিটার্ন করবে।
-
 function hourToMin(hours){
     let mins = hours * 60;
     return mins;
@@ -210,3 +208,64 @@ function threeNumberAddition(num1,num2,num3){
 }
 let additionValue = threeNumberAddition(firstValue,secondValue,thirdValue);
 console.log('Three Number Addition is: ', additionValue);
+
+// Problem sloving #10
+// Ques: তোমাকে ফাংশনের ইনপুট হিসেবে সেলসিয়াস দিবে। তুমি ক্যালকুলেশন করে তাপমাত্রা ফারেনহাইট এ কনভার্ট করে সেটার আউটপুট রিটার্ন করবে
+function celciusToFarenheit(celcius){
+    let farenheit = (celcius * 1.8) + 32; // Formula
+    return farenheit;
+}
+let farenheitValue = celciusToFarenheit(2);
+console.log('Farenheit value is: ', farenheitValue);
+
+// Ques: তোমাকে ফারেনহাইট হিসেবে তাপমাত্রা দিলে সেটাকে সেলসিয়াস এ কনভার্ট করে আউটপুট দিবে। 
+function farenheitToCelcius(ferenheit) {
+    let celcius = (ferenheit - 32) * 0.555555556; // Formula
+    return celcius;
+}
+let celciusValue = farenheitToCelcius(64);
+console.log('Celcius value is: ', celciusValue.toFixed(4));
+
+// Problem Sloving #11
+
+// Ques: কেউ ১০০ এর মধ্যে কত মার্ক্স্ পেয়েছে সেটা তোমাকে বলে দিবে। তুমি একটা ফাংশন দিয়ে বলে দিবে সে এ+ পাবে নাকি অন্য কোন গ্রেড পাবে।
+
+function markSheets(number){
+    if((number >= 80) && (number < 100)){
+        let thisGradeAplus = 'You got a A+';
+        return thisGradeAplus;
+    }
+    else if((number >= 70) && (number < 80)){
+        let thisGradeA = 'You got a A';
+        return thisGradeA;
+    }
+    else if((number >= 60) && (number < 70)){
+        let thisGradeAmanus = 'You got a A-';
+        return thisGradeAmanus;
+    }
+    else if((number >= 50) && (number < 60)){
+        let thisGradeB = 'You got a B';
+        return thisGradeB;
+    }
+    else if((number >= 40) && (number < 50)){
+        let thisGradeC = 'You got a C';
+        return thisGradeC;
+    }
+    else if ((number >= 33) && (number < 40)){
+        let thisGradeD = 'You got a D';
+        return thisGradeD;
+    }
+    else if(number < 33){
+        let thisGradeF = 'You got a F';
+        return thisGradeF;
+    }
+    else{
+        let thisGradeNotFound = 'You result is not found';
+        return thisGradeNotFound;
+    }
+
+}
+let markValue = markSheets(46);
+console.log('The result value is: ', markValue);
+
+// Problem Sloving #12
