@@ -19,3 +19,17 @@ var moblieDetails = {
     price: 15000,
     Storage: '128gb'
 };
+moblieDetails.Storage; // item access niym
+moblieDetails.moblieCode = 3534; // noton item access korar niym
+moblieDetails.price = 16000; // item change ba replace jonno
+moblieDetails.model = ['iphone-7', 'iphone-7s', 'iphone-7plus'];
+moblieDetails.model[2]; // object item jodi array hoi tahole object item access kore array vitore item access kora jabe
+moblieDetails.welComeMsg = function(){
+    console.log('Hello');
+}
+moblieDetails.welComeMsg();
+for(item in moblieDetails){
+    console.log(item);
+} // sob item access korar jnno
+console.log(moblieDetails);
+console.log(moblieDetails.model[2]);
